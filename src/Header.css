@@ -1,0 +1,84 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 1px;
+  position: sticky; /* Understand what is this and why we use top after that */
+  top: 0;
+  background-color: white;
+  z-index: 999;
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  width: 150 px;
+  height: 80px;
+  object-fit: contain; /* Always use it with png */
+  margin-left: 10px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header__input {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  border: 1px solid lightgray;
+  width: 30%;
+}
+
+@media (max-width: 610px) {
+  .header__input {
+    width: 30%;
+  }
+  .header__input > input {
+    width: 30%;
+  }
+
+  .header__logo {
+    width: 140 px;
+    height: 71px;
+    object-fit: contain; /* Always use it with png */
+    margin-left: 10px;
+  }
+
+  .header__icon {
+    margin-right: 16px;
+    font-size: 20px;
+  }
+}
+
+.header__input > input {
+  flex: 0.95;
+  border: none;
+}
+
+.header__input > input:focus {
+  outline: none;
+}
+
+.header__link {
+  flex: 0.05;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  color: rgb(10, 10, 10);
+  /* width: 100% !important; */
+  height: 100%;
+  border-left: 1px solid lightgray;
+  background-color: #f8f8f8;
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+}
+
+.header__icon {
+  margin-right: 8px;
+}

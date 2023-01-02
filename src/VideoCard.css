@@ -1,0 +1,42 @@
+.videoCard {
+  width: 270px;
+  margin-bottom: 40px;
+}
+
+.videoCard__thumbnail {
+  height: 140px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.videoCard__info {
+  display: flex;
+  margin-top: 10px;
+  padding-right: 30px;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.video__text {
+  margin-left: 16px;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.video__title {
+  font-size: 14px;
+  font-family: "Roboto", "Arial", sans-serif;
+  overflow: hidden;
+  color: #0f0f0f !important;
+  font-weight: 500;
+  /* font-weight: bold; */
+  margin-bottom: 5px;
+}
+
+.video__text > p {
+  font-size: 14px;
+  color: gray;
+}
+
+.videoCard__avatar {
+  height: 30px !important;
+  width: 30px !important;
+}
